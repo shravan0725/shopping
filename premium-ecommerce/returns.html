@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Returns - LuxeShop</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <style>
+        .content-section { max-width: 900px; margin: 4rem auto; padding: 0 2rem; }
+        .content-title { font-family: 'Playfair Display', serif; font-size: 2.5rem; margin-bottom: 2rem; }
+        .content-text { line-height: 1.8; color: var(--text-secondary); margin-bottom: 1.5rem; }
+        .info-box { background: var(--bg-secondary); padding: 1.5rem; border-radius: var(--radius); margin: 1.5rem 0; border-left: 4px solid var(--primary); }
+        .step { padding: 1.5rem; background: var(--bg-secondary); border-radius: var(--radius); margin-bottom: 1rem; }
+        .step-number { display: inline-block; width: 30px; height: 30px; background: var(--primary); color: white; border-radius: 50%; text-align: center; line-height: 30px; margin-right: 1rem; font-weight: 600; }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="navbar-left">
+                <a href="index.html" class="logo">
+                    <span class="logo-text">Luxe</span>
+                    <span class="logo-accent">Shop</span>
+                </a>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="index.html#featured" class="nav-link">Collections</a></li>
+                <li class="nav-item"><a href="index.html#trending" class="nav-link">Trending</a></li>
+                <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+            </ul>
+            <div class="navbar-right">
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+                    <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+                    <svg class="moon-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+                </button>
+                <button class="nav-icon cart-btn" aria-label="Shopping cart">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>
+                    <span class="cart-count">0</span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="content-section">
+        <h1 class="content-title">Returns & Exchanges</h1>
+        <p class="content-text">
+            Your satisfaction is our priority. We offer hassle-free returns and exchanges within 60 days of purchase.
+        </p>
+
+        <div class="info-box">
+            <strong>Return Window:</strong> 60 days from delivery for full refund or exchange. Items must be unused and in original packaging.
+        </div>
+
+        <h2>Return Process</h2>
+
+        <div class="step">
+            <span class="step-number">1</span>
+            <strong>Initiate Return</strong>
+            <p style="margin-top: 0.5rem; color: var(--text-secondary);">Contact our support team or use your account dashboard to start a return. Provide your order number and reason.</p>
+        </div>
+
+        <div class="step">
+            <span class="step-number">2</span>
+            <strong>Get Return Label</strong>
+            <p style="margin-top: 0.5rem; color: var(--text-secondary);">We'll email you a prepaid return shipping label. For orders over $250, return shipping is completely free.</p>
+        </div>
+
+        <div class="step">
+            <span class="step-number">3</span>
+            <strong>Ship Your Item</strong>
+            <p style="margin-top: 0.5rem; color: var(--text-secondary);">Pack your item securely in original packaging. Use our provided label and drop off at any shipping location.</p>
+        </div>
+
+        <div class="step">
+            <span class="step-number">4</span>
+            <strong>We Process Your Return</strong>
+            <p style="margin-top: 0.5rem; color: var(--text-secondary);">Upon receipt, we'll inspect and process your refund within 5-7 business days.</p>
+        </div>
+
+        <h2 style="margin: 2rem 0 1rem;">What Can Be Returned?</h2>
+        <ul style="line-height: 2; color: var(--text-secondary);">
+            <li>✓ Unused items in original packaging and condition</li>
+            <li>✓ Items within 60 days of delivery</li>
+            <li>✓ Defective or damaged items (anytime)</li>
+            <li>✓ Wrong items shipped to you</li>
+        </ul>
+
+        <h2>Non-Returnable Items</h2>
+        <p class="content-text">
+            Custom orders, final sale items, and clearance products cannot be returned. However, defects are always covered.
+        </p>
+
+        <div class="info-box">
+            <strong>Damaged or Defective?</strong> Contact us immediately at support@luxeshop.com. We'll arrange a replacement or refund right away at no cost to you.
+        </div>
+
+        <h2>Refund Details</h2>
+        <ul style="line-height: 2; color: var(--text-secondary);">
+            <li>✓ Original payment method within 5-7 business days</li>
+            <li>✓ Original shipping cost non-refundable</li>
+            <li>✓ Free return shipping on orders over $250</li>
+            <li>✓ Exchanges ship immediately at no extra cost</li>
+        </ul>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer" style="margin-top: 4rem;">
+        <div class="footer-content">
+            <div class="footer-col"><h4>About LuxeShop</h4><ul><li><a href="about.html">Our Story</a></li><li><a href="careers.html">Careers</a></li><li><a href="press.html">Press</a></li><li><a href="sustainability.html">Sustainability</a></li></ul></div>
+            <div class="footer-col"><h4>Customer Service</h4><ul><li><a href="contact.html">Contact Us</a></li><li><a href="shipping.html">Shipping Info</a></li><li><a href="returns.html">Returns</a></li><li><a href="faq.html">FAQ</a></li></ul></div>
+            <div class="footer-col"><h4>Policies</h4><ul><li><a href="privacy.html">Privacy Policy</a></li><li><a href="terms.html">Terms of Service</a></li><li><a href="cookies.html">Cookie Policy</a></li><li><a href="accessibility.html">Accessibility</a></li></ul></div>
+            <div class="footer-col"><h4>Follow Us</h4><div class="social-links"><a href="#" class="social-link">Instagram</a><a href="#" class="social-link">Twitter</a><a href="#" class="social-link">Facebook</a><a href="#" class="social-link">Pinterest</a></div></div>
+        </div>
+        <div class="footer-bottom"><p>&copy; 2026 LuxeShop. All rights reserved.</p></div>
+    </footer>
+
+    <script src="js/theme.js"></script>
+    <script src="js/cart.js"></script>
+</body>
+</html>

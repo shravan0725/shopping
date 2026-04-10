@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessibility - LuxeShop</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <style>
+        .content-section { max-width: 900px; margin: 4rem auto; padding: 0 2rem; }
+        .content-title { font-family: 'Playfair Display', serif; font-size: 2.5rem; margin-bottom: 2rem; }
+        .content-text { line-height: 1.8; color: var(--text-secondary); margin-bottom: 1.5rem; }
+        h2 { margin: 2rem 0 1rem; }
+        h3 { margin: 1.5rem 0 0.5rem; }
+        .feature-list { background: var(--bg-secondary); padding: 2rem; border-radius: var(--radius); margin: 1.5rem 0; }
+        .feature-list ul { margin: 0; padding-left: 2rem; }
+        .feature-list li { margin-bottom: 0.5rem; }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="navbar-left">
+                <a href="index.html" class="logo">
+                    <span class="logo-text">Luxe</span>
+                    <span class="logo-accent">Shop</span>
+                </a>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="index.html#featured" class="nav-link">Collections</a></li>
+                <li class="nav-item"><a href="index.html#trending" class="nav-link">Trending</a></li>
+                <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+            </ul>
+            <div class="navbar-right">
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+                    <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+                    <svg class="moon-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+                </button>
+                <button class="nav-icon cart-btn" aria-label="Shopping cart">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>
+                    <span class="cart-count">0</span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="content-section">
+        <h1 class="content-title">Accessibility Statement</h1>
+        <p class="content-text">
+            LuxeShop is committed to ensuring digital accessibility for everyone, including people with disabilities. We are continuously improving our website's accessibility to meet or exceed WCAG 2.1 Level AA standards.
+        </p>
+
+        <h2>Our Accessibility Features</h2>
+        <div class="feature-list">
+            <ul>
+                <li>✓ Keyboard navigation support throughout the site</li>
+                <li>✓ Screen reader compatible with semantic HTML markup</li>
+                <li>✓ High contrast mode and dark/light theme options</li>
+                <li>✓ Adjustable text sizes and font options</li>
+                <li>✓ Alternative text for all images and icons</li>
+                <li>✓ Descriptive link text and ARIA labels</li>
+                <li>✓ Captions and transcripts for video content</li>
+                <li>✓ Reduced motion options for animations</li>
+                <li>✓ Focus indicators on interactive elements</li>
+                <li>✓ Mobile accessibility and responsive design</li>
+            </ul>
+        </div>
+
+        <h2>How to Navigate Our Site</h2>
+
+        <h3>Keyboard Navigation</h3>
+        <p class="content-text">
+            You can navigate our entire website using the keyboard:
+        </p>
+        <ul style="color: var(--text-secondary); line-height: 2;">
+            <li><strong>Tab:</strong> Move forward through interactive elements</li>
+            <li><strong>Shift + Tab:</strong> Move backward through interactive elements</li>
+            <li><strong>Enter:</strong> Activate buttons and links</li>
+            <li><strong>Space:</strong> Toggle checkboxes and buttons</li>
+            <li><strong>Arrow Keys:</strong> Navigate within dropdowns and sliders</li>
+            <li><strong>Escape:</strong> Close modals and overlays</li>
+        </ul>
+
+        <h3>Screen Reader Support</h3>
+        <p class="content-text">
+            Our site is fully compatible with popular screen readers including NVDA, JAWS, and VoiceOver. All content is properly labeled with ARIA attributes for context.
+        </p>
+
+        <h3>Text Sizing</h3>
+        <p class="content-text">
+            Use your browser's zoom feature (Ctrl/Cmd + Plus) to increase text size. Our responsive design ensures readability at all zoom levels.
+        </p>
+
+        <h3>Color Contrast</h3>
+        <p class="content-text">
+            All text meets WCAG AA standards for color contrast. Use our dark mode for additional options.
+        </p>
+
+        <h2>Accessibility Standards</h2>
+        <p class="content-text">
+            We aim to comply with:
+        </p>
+        <ul style="color: var(--text-secondary); line-height: 2;">
+            <li>Web Content Accessibility Guidelines (WCAG) 2.1 Level AA</li>
+            <li>Americans with Disabilities Act (ADA) standards</li>
+            <li>Section 508 of the Rehabilitation Act</li>
+            <li>European Accessibility Act (EAA)</li>
+        </ul>
+
+        <h2>Known Issues</h2>
+        <p class="content-text">
+            While we work continuously to improve accessibility, some third-party integrations may have limitations. Please contact us if you encounter any barriers.
+        </p>
+
+        <h2>Report Accessibility Issues</h2>
+        <p class="content-text">
+            If you experience accessibility barriers, please let us know:
+        </p>
+        <ul style="color: var(--text-secondary); line-height: 2;">
+            <li><strong>Email:</strong> accessibility@luxeshop.com</li>
+            <li><strong>Phone:</strong> +1 (800) LUXE-SHOP</li>
+            <li><strong>Response Time:</strong> 48 business hours</li>
+        </ul>
+
+        <h2>Accessibility Resources</h2>
+        <p class="content-text">
+            Learn more about web accessibility:
+        </p>
+        <ul style="color: var(--text-secondary); line-height: 2;">
+            <li>WebAIM: <a href="https://webaim.org" style="color: var(--primary); text-decoration: underline;">webaim.org</a></li>
+            <li>W3C WCAG: <a href="https://www.w3.org/WAI" style="color: var(--primary); text-decoration: underline;">w3.org/WAI</a></li>
+            <li>ARIA Authoring: <a href="https://www.w3.org/ARIAssistant" style="color: var(--primary); text-decoration: underline;">w3.org/ARIAssistant</a></li>
+        </ul>
+
+        <p class="content-text" style="margin-top: 2rem;">
+            <strong>Last Updated:</strong> April 2026. We regularly audit and update our accessibility practices.
+        </p>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer" style="margin-top: 4rem;">
+        <div class="footer-content">
+            <div class="footer-col"><h4>About LuxeShop</h4><ul><li><a href="about.html">Our Story</a></li><li><a href="careers.html">Careers</a></li><li><a href="press.html">Press</a></li><li><a href="sustainability.html">Sustainability</a></li></ul></div>
+            <div class="footer-col"><h4>Customer Service</h4><ul><li><a href="contact.html">Contact Us</a></li><li><a href="shipping.html">Shipping Info</a></li><li><a href="returns.html">Returns</a></li><li><a href="faq.html">FAQ</a></li></ul></div>
+            <div class="footer-col"><h4>Policies</h4><ul><li><a href="privacy.html">Privacy Policy</a></li><li><a href="terms.html">Terms of Service</a></li><li><a href="cookies.html">Cookie Policy</a></li><li><a href="accessibility.html">Accessibility</a></li></ul></div>
+            <div class="footer-col"><h4>Follow Us</h4><div class="social-links"><a href="#" class="social-link">Instagram</a><a href="#" class="social-link">Twitter</a><a href="#" class="social-link">Facebook</a><a href="#" class="social-link">Pinterest</a></div></div>
+        </div>
+        <div class="footer-bottom"><p>&copy; 2026 LuxeShop. All rights reserved.</p></div>
+    </footer>
+
+    <script src="js/theme.js"></script>
+    <script src="js/cart.js"></script>
+</body>
+</html>

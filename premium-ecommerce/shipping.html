@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shipping Info - LuxeShop</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <style>
+        .content-section { max-width: 900px; margin: 4rem auto; padding: 0 2rem; }
+        .content-title { font-family: 'Playfair Display', serif; font-size: 2.5rem; margin-bottom: 2rem; }
+        .content-text { line-height: 1.8; color: var(--text-secondary); margin-bottom: 1.5rem; }
+        .shipping-table { width: 100%; border-collapse: collapse; margin: 2rem 0; }
+        .shipping-table th { background: var(--bg-secondary); padding: 1rem; text-align: left; font-weight: 600; }
+        .shipping-table td { padding: 1rem; border-bottom: 1px solid var(--border-color); }
+        .info-box { background: var(--bg-secondary); padding: 1.5rem; border-radius: var(--radius); margin: 1.5rem 0; border-left: 4px solid var(--primary); }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="navbar-left">
+                <a href="index.html" class="logo">
+                    <span class="logo-text">Luxe</span>
+                    <span class="logo-accent">Shop</span>
+                </a>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="index.html#featured" class="nav-link">Collections</a></li>
+                <li class="nav-item"><a href="index.html#trending" class="nav-link">Trending</a></li>
+                <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+            </ul>
+            <div class="navbar-right">
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+                    <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+                    <svg class="moon-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+                </button>
+                <button class="nav-icon cart-btn" aria-label="Shopping cart">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>
+                    <span class="cart-count">0</span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="content-section">
+        <h1 class="content-title">Shipping Information</h1>
+        <p class="content-text">
+            We ensure your luxury items arrive in pristine condition. All orders are carefully packaged and tracked from our warehouse to your door.
+        </p>
+
+        <div class="info-box">
+            <strong>Free Shipping:</strong> Orders over $500 receive complimentary premium shipping worldwide. For orders under $500, shipping rates start at $15.
+        </div>
+
+        <h2>Shipping Methods & Times</h2>
+        <table class="shipping-table">
+            <thead>
+                <tr>
+                    <th>Shipping Method</th>
+                    <th>Delivery Time</th>
+                    <th>Coverage</th>
+                    <th>Cost</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Standard Shipping</td>
+                    <td>5-7 business days</td>
+                    <td>USA & Canada</td>
+                    <td>$15</td>
+                </tr>
+                <tr>
+                    <td>Express Shipping</td>
+                    <td>2-3 business days</td>
+                    <td>USA & Canada</td>
+                    <td>$45</td>
+                </tr>
+                <tr>
+                    <td>Overnight Shipping</td>
+                    <td>Next business day</td>
+                    <td>Major US cities</td>
+                    <td>$95</td>
+                </tr>
+                <tr>
+                    <td>International Standard</td>
+                    <td>10-15 business days</td>
+                    <td>Worldwide</td>
+                    <td>$35+</td>
+                </tr>
+                <tr>
+                    <td>International Express</td>
+                    <td>5-7 business days</td>
+                    <td>Worldwide</td>
+                    <td>$75+</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2>Delivery Guarantees</h2>
+        <ul style="line-height: 2; color: var(--text-secondary);">
+            <li>✓ Free tracking on all orders</li>
+            <li>✓ Insurance included for orders over $250</li>
+            <li>✓ Signature required for high-value items</li>
+            <li>✓ White-glove delivery for orders over $2,000</li>
+            <li>✓ Packaging guarantees perfect condition or full refund</li>
+            <li>✓ Delivery problems resolved within 24 hours</li>
+        </ul>
+
+        <div class="info-box">
+            <strong>Track Your Order:</strong> Once your order ships, you'll receive a tracking number via email. Check your shipment status anytime at checkout.
+        </div>
+
+        <p class="content-text" style="margin-top: 2rem;">
+            For questions about specific shipments, contact our support team at support@luxeshop.com or call +1 (800) LUXE-SHOP.
+        </p>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer" style="margin-top: 4rem;">
+        <div class="footer-content">
+            <div class="footer-col"><h4>About LuxeShop</h4><ul><li><a href="about.html">Our Story</a></li><li><a href="careers.html">Careers</a></li><li><a href="press.html">Press</a></li><li><a href="sustainability.html">Sustainability</a></li></ul></div>
+            <div class="footer-col"><h4>Customer Service</h4><ul><li><a href="contact.html">Contact Us</a></li><li><a href="shipping.html">Shipping Info</a></li><li><a href="returns.html">Returns</a></li><li><a href="faq.html">FAQ</a></li></ul></div>
+            <div class="footer-col"><h4>Policies</h4><ul><li><a href="privacy.html">Privacy Policy</a></li><li><a href="terms.html">Terms of Service</a></li><li><a href="cookies.html">Cookie Policy</a></li><li><a href="accessibility.html">Accessibility</a></li></ul></div>
+            <div class="footer-col"><h4>Follow Us</h4><div class="social-links"><a href="#" class="social-link">Instagram</a><a href="#" class="social-link">Twitter</a><a href="#" class="social-link">Facebook</a><a href="#" class="social-link">Pinterest</a></div></div>
+        </div>
+        <div class="footer-bottom"><p>&copy; 2026 LuxeShop. All rights reserved.</p></div>
+    </footer>
+
+    <script src="js/theme.js"></script>
+    <script src="js/cart.js"></script>
+</body>
+</html>
